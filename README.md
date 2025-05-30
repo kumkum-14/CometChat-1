@@ -31,36 +31,36 @@ CometChat Android Chat Tutorial: Conversation List + Message View
 
 4. Install Dependencies
 
-i. Add the CometChat Repository
-    In your build.gradle (Project):
+    i. Add the CometChat Repository
+        In your build.gradle (Project):
 
-    allprojects {
-        repositories {
-            google()
-            mavenCentral()
-            maven { url 'https://dl.cloudsmith.io/public/cometchat/cometchat-pro-android/maven/' }
+        allprojects {
+            repositories {
+                google()
+                mavenCentral()
+                maven { url 'https://dl.cloudsmith.io/public/cometchat/cometchat-pro-android/maven/' }
+            }
         }
-    }
-ii. Add the CometChat Dependency
-  In build.gradle (App):
-     
-      dependencies {
-          implementation(libs.cometchat.ui.kit)
+    ii. Add the CometChat Dependency
+      In build.gradle (App):
+         
+          dependencies {
+              implementation(libs.cometchat.ui.kit)
+          
+              // (Optional) Include if using voice/video calling features
+              implementation(libs.cometchat.calls.sdk)
+          }
+          
+      Inside libs.versions.toml,
       
-          // (Optional) Include if using voice/video calling features
-          implementation(libs.cometchat.calls.sdk)
-      }
-      
-  Inside libs.versions.toml,
-  
-    [versions]
-    cometchat-ui-kit = "5.0.2"
-    cometchat-calls-sdk = "4.1.0"
-
-    [libraries]
-    cometchat-ui-kit = { module = "com.cometchat:chat-uikit-android", version.ref = "cometchat-ui-kit" }
-    cometchat-calls-sdk = { module = "com.cometchat:calls-sdk-android", version.ref = "cometchat-calls-sdk" }
-
+        [versions]
+        cometchat-ui-kit = "5.0.2"
+        cometchat-calls-sdk = "4.1.0"
+    
+        [libraries]
+        cometchat-ui-kit = { module = "com.cometchat:chat-uikit-android", version.ref = "cometchat-ui-kit" }
+        cometchat-calls-sdk = { module = "com.cometchat:calls-sdk-android", version.ref = "cometchat-calls-sdk" }
+    
 5. Initialize CometChat UI Kit  
 
        The UI Kit is initialized in `MainActivity.java` using `UIKitSettings`.
@@ -84,8 +84,8 @@ ii. Add the CometChat Dependency
        Use the provided MainActivity code to initialize CometChat UI Kit and perform user login.
        Replace appID, region, and authKey with your own credentials.
        Use one of the pre-generated test UIDs or create your own users.
-
-   7. Build the Chat Experience
+   
+8. Build the Chat Experience
 
           Stitch the Components: Conversation + Message View
           Key Components
@@ -98,9 +98,9 @@ ii. Add the CometChat Dependency
            iii.Setup the Messages Layout
            iv. Setup the MessageActivity
        
-8. Run the App
+9. Run the App
     
-9. Customise
+10. Customise
     
        Set Up Global Theme
        -To customize component styling across your application in one place, you need to set up the CometChat Theme.
