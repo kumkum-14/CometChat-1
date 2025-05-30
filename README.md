@@ -102,11 +102,11 @@ CometChat Android Chat Tutorial: Conversation List + Message View
     
 10. Customise
     
-       Set Up Global Theme
-       -To customize component styling across your application in one place, you need to set up the CometChat Theme.
-       -Use the CometChatTheme.DayNight style, which is built on Theme.MaterialComponents.DayNight.NoActionBar.
-       -Apply the Theme
-       -Set CometChatTheme.DayNight as the parent theme for your application in the themes.xml file.
+           Set Up Global Theme
+           -To customize component styling across your application in one place, you need to set up the CometChat Theme.
+           -Use the CometChatTheme.DayNight style, which is built on Theme.MaterialComponents.DayNight.NoActionBar.
+           -Apply the Theme
+           -Set CometChatTheme.DayNight as the parent theme for your application in the themes.xml file.
 
  themes.xml
 
