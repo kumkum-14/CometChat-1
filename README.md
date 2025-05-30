@@ -108,16 +108,16 @@ CometChat Android Chat Tutorial: Conversation List + Message View
            -Apply the Theme
            -Set CometChatTheme.DayNight as the parent theme for your application in the themes.xml file.
 
- themes.xml
-
-    <style name="YourAppParentTheme" parent="CometChatTheme.DayNight"/>
- 
- AndroidManifest.xml   
-
-       <application
-        android:theme="@style/YourAppParentTheme"
-        ...
-        ...
-    >
-
-    </application>
+     themes.xml
+    
+        <style name="YourAppParentTheme" parent="CometChatTheme.DayNight"/>
+     
+     AndroidManifest.xml   
+    
+           <application
+            android:theme="@style/YourAppParentTheme"
+            ...
+            ...
+        >
+    
+        </application>
