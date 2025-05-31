@@ -106,4 +106,4 @@ CometChat Android Chat Tutorial: Conversation List + Message View
         >
     
         </application>
-   9. Run the app
+9. Run the app
