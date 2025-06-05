@@ -1,22 +1,33 @@
 CometChat Android Chat Tutorial: Conversation List + Message View
 
+This tutorial walks you through integrating CometChat’s UI Kit to enable real-time one-to-one and group chat features in an Android app using Java. You’ll cover everything from setup to message views and customization.
+
+
     Highlights:
      -One-to-One & Group Chats
      -Real-Time Messaging with session persistence
      -Compact UI – Conversations and messages in a single screen
      -Seamless navigation using Fragments or Jetpack Navigation
      -Lightweight and responsive, optimized for mobile devices
+     
+1. Prerequisites
+   Before starting, ensure you have the following:
 
-1. Create a CometChat Account
+       -Android Studio installed
+       -Basic understanding of Android development (Java, XML, Gradle)
+       -working internet connection
+       -CometChat account (free signup)
+
+2. Create a CometChat Account
 
        -Visit https://app.cometchat.com/signup.
        -Register and login to CometChat's dashboard
-2. Create App on CometChat Dashboard
+3. Create App on CometChat Dashboard
    
         -Go to Dashboard
         -Click + Add App
         -Name your app and click Create App         
-3. Get Credentials
+4. Get Credentials
 
        -Navigate to Application
        -Then select the Credentials section and copy these:
@@ -24,7 +35,7 @@ CometChat Android Chat Tutorial: Conversation List + Message View
          Auth Key
          Region
        You'll need them in your Android project.
-4. Install Dependencies
+5. Install Dependencies
     a. Add the CometChat Repository
         In your build.gradle (Project):
 
@@ -53,11 +64,11 @@ CometChat Android Chat Tutorial: Conversation List + Message View
         [libraries]
         cometchat-ui-kit = { module = "com.cometchat:chat-uikit-android", version.ref = "cometchat-ui-kit" }
         cometchat-calls-sdk = { module = "com.cometchat:calls-sdk-android", version.ref = "cometchat-calls-sdk" }  
-5. Initialize CometChat UI Kit  
+6. Initialize CometChat UI Kit  
 
        -The UI Kit is initialized in `MainActivity.java` using `UIKitSettings`.
        -Initialization requires your `App ID`, `Region`, and `Auth Key`.
-6. User Authentication
+7. User Authentication
 
        -After initialization, the app logs in a user by their UID.
        -To authenticate a user in CometChat, you need the UID (unique user ID).
@@ -75,7 +86,7 @@ CometChat Android Chat Tutorial: Conversation List + Message View
 
        -Use the provided MainActivity code to initialize CometChat UI Kit and perform user login.
        -Replace appID, region, and authKey with your own credentials. 
-7. Build the Chat Experience
+8. Build the Chat Experience
 
        -Stitch the Components: Conversation + Message View
        -Key Components
@@ -87,8 +98,8 @@ CometChat Android Chat Tutorial: Conversation List + Message View
            ii. Setup the Conversation Activity
            iii.Setup the Messages Layout
            iv. Setup the MessageActivity      
-8. Customise
-    
+9. Customise
+  
            Set Up Global Theme
            -To customize component styling across your application in one place, you need to set up the CometChat Theme.
            -Use the CometChatTheme.DayNight style, which is built on Theme.MaterialComponents.DayNight.NoActionBar.
@@ -106,4 +117,18 @@ CometChat Android Chat Tutorial: Conversation List + Message View
         >
     
         </application>
-9. Run the app
+10. Run the app
+    
+        -Connect a physical Android device or start an emulator.
+        -Build and run the app from Android Studio.
+        -Login with a test UID (e.g., cometchat-uid-1) or a user you created.
+        -You should see the conversation list and can start chatting.
+Conclusion
+
+     You have successfully built a real-time chat feature using CometChat’s UI Kit in your Android app. You can now explore additional features like:
+    -Push Notifications
+    -Voice/Video Calls
+    -Message Reactions
+    -Custom UI styling
+
+
